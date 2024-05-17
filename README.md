@@ -1,10 +1,12 @@
 # 2D Physics Engine
-Welcome! This 2D Physics Engine was built using p5.js. Particles experience collisions and a gravitational force. Click to spawn circular particles into the scene.
+Welcome! This 2D Physics Engine was built using p5.js. Particles experience collisions and a gravitational force. Click to spawn circular particles into the scene.<br>
+<img src="https://github.com/EvanC8/2D-Physics-Engine/assets/137731839/75f1ae1c-479b-4091-96eb-5752c00d31d9" width="200">
 # How it works
 ### Motion
 Verlet Integration is the method used to calculate the positions of particles in the presence of a gravitational force. 
 
 **Verlet Equation**
+
 $$x_{n+1} = 2x_{n} - x_{n-1} + a_{n}Δt^2$$
 A particle's **current positon** $x_{n}$, **previous position** $x_{n-1}$, **acceleration** $a_{n}$, and the **time-step** $Δt$ are used to approximate the new position $x_{n+1}$ of the particle.
 
@@ -16,4 +18,6 @@ A particle's **current positon** $x_{n}$, **previous position** $x_{n-1}$, **acc
 <br>A collision is detected by measuring the distance between the center's of two particles in the scene. If this distance is greater than the sum of their radii, then two particles have intersected, indicating a collision.
 
 **Handling Collisions**
-<br>A collision can be handled by altering the current positions of two colliding particles, moving each particle half of the distance of their intersection so that they are no longer intersecting. Thanks to the structure of the verlet equation, a resulting velocity is imparted on both particles, creating the effect of the particles bouncing apart. 
+<br>A collision can be handled by altering the current positions of two colliding particles, moving each particle half of the distance of their intersection so that they are no longer intersecting. Thanks to the structure of the verlet equation, a resulting equal velocity is imparted on both particles, creating the effect of the particles bouncing apart. 
+
+However, this approach does not take into account the relative sizes of the particles. Realistically, a larger particle with greater mass has a great inertia and thus, will be less resistant to changing its motion than a smaller particle. This is accounted for by applying concepts of conservation of momentum. 
