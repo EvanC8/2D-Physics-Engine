@@ -43,7 +43,7 @@ A particle's **current positon** $x_{n}$, **previous position** $x_{n-1}$, **acc
 <br>Position approximation is improved with a smaller time-step. The more frequent the position of a particle is updated, the closer of an approximation to the particles ideal motion. The time-step for the draw function in p5.js is approximately 60 times/second (every ~0.017 seconds). By dividing the time-step into smaller sub-steps, a particle's position can be updated multiple times per frame change, increasing the precision and realistic presentation of the simulation. 
 
 ### Collisions
-
+<sup><i>Note: Visuals can only be seen with dark mode enabled on github</i></sup>
 <!-- ![BeforeCollision](https://github.com/EvanC8/2D-Physics-Engine/assets/137731839/83369bd5-8282-48cb-983c-6957958581f3) -->
 
 <p align="center">Before Collision</p>
