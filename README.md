@@ -1,6 +1,7 @@
 # 2D Physics Engine
 Welcome! This 2D Physics Engine was built to experiment with physics and vector concepts to create an artifical simulation of motion. The simulation features circular objects called particles that can experience collisions and a gravitational force. Particles can be added to the scene with a click.<br>
 <!-- <img src="https://github.com/EvanC8/2D-Physics-Engine/assets/137731839/75f1ae1c-479b-4091-96eb-5752c00d31d9" width="200"> -->
+![](https://github.com/EvanC8/2D-Physics-Engine/blob/main/simulation.gif)
 
 <!-- TABLE OF CONTENTS -->
 <details>
