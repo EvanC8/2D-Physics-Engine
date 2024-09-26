@@ -29,7 +29,10 @@ Welcome! This 2D Physics Engine was built to experiment with physics and vector 
    git clone https://github.com/EvanC8/2D-Physics_Engine.git
    ```
 # Usage
-Images coming soon.
+1. Downlaod project.
+2. Run `index.html` in your browser.
+3. Click to add particles to the scene.
+4. Enjoy!
 
 # How it works
 ### Motion
